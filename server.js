@@ -11,6 +11,8 @@ const flash = require("express-flash")
 
 app.use(express.urlencoded({ extended: false }));
 
+app.use(cors())
+
 const port = 8001;
 
 /*
