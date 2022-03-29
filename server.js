@@ -27,11 +27,12 @@ app.use(
 
 const Pool = require('pg').Pool
 const pool = new Pool({
-  host: "localhost",
-  user: "sakurai",
+  host: "dokku-postgres-polysmash-db",
+  user: "postgres",
   port: "5432",
-  password: "smash5",
-  database: "polysmash"
+  password: "62d3612b1942b3a20f0a4985c88a956d",
+  database: "polysmash_db"
+  
 })
 
 

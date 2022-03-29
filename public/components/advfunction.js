@@ -55,7 +55,7 @@ app.component("advfunc", {
         // Permet de contacter l'api pour changer le mdp et le friendcode
         changepsw() {
             const xhr = new XMLHttpRequest()
-            xhr.open('POST', 'http://localhost:8001/changepsw')
+            xhr.open('POST', 'https://polysmash.cluster-ig3.igpolytech.fr/changepsw')
             xhr.setRequestHeader('Content-Type', 'application/json', false)
             xhr.send(JSON.stringify({email: document.getElementById('email').value,
                 password: document.getElementById('password').value,

@@ -57,7 +57,7 @@ app.component("profile", {
     methods: {
         recupInfo(){
             const xhr = new XMLHttpRequest()
-            xhr.open('GET', 'http://localhost:8001/profile/info')
+            xhr.open('GET', 'https://polysmash.cluster-ig3.igpolytech.fr/profile/info')
             xhr.responseType = 'json'
             xhr.onload = () => {
               if(xhr.status == 200) {

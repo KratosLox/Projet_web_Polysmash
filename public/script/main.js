@@ -14,7 +14,7 @@ const app = Vue.createApp({
         // Permet de contacter l'api pour creer un compte et de s'y connecter
         register() {
             const xhr = new XMLHttpRequest()
-            xhr.open('POST', 'http://localhost:8001/register')
+            xhr.open('POST', 'https://polysmash.cluster-ig3.igpolytech.fr/register')
             xhr.setRequestHeader('Content-Type', 'application/json', false)
             xhr.send(JSON.stringify({email: document.getElementById('email').value,
                 password: document.getElementById('password').value,
@@ -25,7 +25,7 @@ const app = Vue.createApp({
         },
         login() {
             const xhr = new XMLHttpRequest()
-            xhr.open('POST', 'http://localhost:8001/login')
+            xhr.open('POST', 'https://polysmash.cluster-ig3.igpolytech.fr/login')
             xhr.setRequestHeader('Content-Type', 'application/json', false)
             xhr.send(JSON.stringify({email: document.getElementById('email').value,
                 password: document.getElementById('password').value
@@ -35,7 +35,7 @@ const app = Vue.createApp({
         })
             xhr.onload = () => {
                 if(xhr.status==200){
-                    window.location.href = 'http://localhost:8001/'
+                    window.location.href = 'https://polysmash.cluster-ig3.igpolytech.fr/'
                 } else {
                     console.log(xhr.status)
                 }
@@ -43,7 +43,7 @@ const app = Vue.createApp({
         },
         updateList(){
             const xhr = new XMLHttpRequest()
-            xhr.open('POST', 'http://localhost:8001/searchprof')
+            xhr.open('POST', 'https://polysmash.cluster-ig3.igpolytech.fr/searchprof')
             xhr.setRequestHeader('Content-Type', 'application/json', false)
             xhr.send(JSON.stringify({search: document.getElementById('nav-bar-input').value
             }))
