@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PolySmash</title>
+    <link rel="icon" href="../assets/images/smash.ico" />
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    </head>
+  <body>
+    <div id="app">
+      <header-smash></header-smash>
+      <navi-dex></navi-dex>
+        <div id="loginator">
+          <img draggable="false" src="../assets/images/user.jpg">
+          <form id="reg-form" @submit.prevent="register">
+
+            <input 
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail*"
+              required
+            >
+            <input 
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password*"
+              required
+            >
+            <input 
+              type="password"
+              id="password2"
+              name="password2"
+              placeholder="Confirm password*"
+              required
+            >
+            <input 
+              type="pseudo"
+              id="pseudo"
+              name="pseudo"
+              placeholder="Pseudo*"
+              required
+            >
+            <input
+              type="friendcode"
+              id="friendcode"
+              name="friendcode"
+              placeholder="Friend Code"
+            >
+            <div>
+            <input type="submit" value="register">
+          </div>
+          <a id="logsig" href="login"> Already registered? Login here</a>
+          </form>
+          
+          
+        </div>
+      <footer-smash></footer-smash>
+    </div>
+  
+  
+  
+    <!-- Import App -->
+    <script src="../script/main.js"></script>
+
+    <!-- Import Components -->
+    <script src="../components/naviDex.js"></script>
+    <script src="../components/footer.js"></script>
+    <script src="../components/header.js"></script>
+    
+    
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
+  </body>
+</html>

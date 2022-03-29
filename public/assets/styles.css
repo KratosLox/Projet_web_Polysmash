@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  cursor: url(images/cursor/pointer.png), auto;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282828;
+  background-color: rgb(63, 59, 59);
+  cursor: url(images/cursor/pointer.png), auto;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(189,189,189,1) 81%, rgba(255,0,0,1) 100%);
+  color: #fff;
+  width:100%;
+  bottom:0;
+  position: fixed;
+}
+.footer{
+  cursor: url(images/cursor/pointer.png), auto;
+}
+header a{
+  text-decoration: none;
+}
+header {
+  padding: 0 20 px;
+  background: linear-gradient(-90deg, #fa1a0a, #000000);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: url(images/cursor/coin.png), auto;
+}
+#brand a{
+  color: #fa1a0a;
+  cursor: url(images/cursor/coin.png), auto;
+}
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  cursor: url(images/cursor/coin.png), auto;
+}
+ul a{
+  color: white;
+}
+ul li{
+  padding: 5px;
+  margin-left: 10px;
+}
+ul li:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: url(images/cursor/coin.png), auto;
+}
+#heada {
+  cursor: url(images/cursor/coin.png), auto;
+}
+
+#login,
+#logout,
+#register {
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: url(images/cursor/coin.png), auto;
+}
+#login {
+  border: 1px solid #498afb;
+  color: #498afb;
+}
+
+#register {
+  border: 1px solid rgb(1, 175, 1);
+  color: rgb(1, 175, 1);
+}
+
+#logout {
+  border: 1px solid rgb(148, 146, 17);
+  color: rgb(148, 146, 17);
+}
+
+#hamberger-icon{
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamberger-icon div{
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform : rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform : rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamberger-icon {
+    display: block;
+  }
+}
+
+
+
+input {
+  margin-left: 5px;
+  margin-top: 0px;
+  width: 20%;
+  height: 5%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fa1a0a;
+}
+
+.p-nav p{
+  font-size: 20px;
+  color: #fa1a0a;
+}
+
+li {
+  font-size: 18px;
+}
+
+.nav-bar {
+  background: linear-gradient(-90deg, #fa1a0a, #000000);
+  height: 35px;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+#tierbandeau {
+  display: flex;
+}
+#tierpic {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  min-height: 70vh;
+  background-color: rgb(56,56,56);
+  padding: 10px;
+  margin-bottom: 20px;
+  	
+}
+#board  {
+  cursor: url(images/cursor/grab.png);
+}
+.row {
+  display: flex;
+  width: 100%;
+  min-height: 85px;
+  background-color: rgb(30,30,30);
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+}
+.labelTL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  width: 100px;
+  background-color: green;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  width: 100px;
+  background-color: rgb(148, 59, 59);
+  cursor: url(images/cursor/default.png), auto;	
+}
+.hovered {
+  display: flex;
+  width: 100%;
+  min-height: 85px;
+  background-color: rgb(30,30,30);
+  flex-wrap: wrap;
+  border-color: #f4f4f4;
+  border-style: dashed;
+  cursor: url(images/cursor/grab.png), auto;
+}
+.bank {
+  margin-left: 20px;
+  display: flex;
+  min-width: 80vw;
+  min-height: 100px;
+  background-color: rgb(30,30,30);
+  margin-bottom:50px;
+  flex-wrap: wrap;
+  cursor: url(images/cursor/pointer.png), auto;
+}
+#loginator {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  min-height: 200px;
+  background-color:#EFEFEF;
+  padding: 10px;
+}
+#loginator input {
+  margin-top: 0px;
+  width: 95%;
+  height: 25px;
+  margin-bottom: 20px;
+}
+#logsig {
+  font-size: 10px;
+  text-decoration: none;
+
+}
+#loginator img {
+  height: 100px;
+  width: 100px;
+}
+#loginator button {
+  width: 95%;
+  height: 25px;
+}
+#profil {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  min-height: 40vw;
+  background-color:rgb(177, 165, 165);
+  padding: 10px;
+  border-radius: 15px;
+}
+#profil img {
+  height: 15v;
+  width: 15vw;
+  border-radius: 100%;
+}
+
+#profil #toMaster {
+  background-color: rgb(165, 40, 214);
+  border: #000000 solid 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(240, 233, 233);;
+}
+#profil #toMaster hovered{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.profilecard {
+  border-radius: 10px;
+  box-shadow: 0 3px 15px black;
+  margin: 5px;
+  padding: 5px;
+  align-content: center;
+  text-align: center;
+  max-width: 200px;
+  min-width: 170px;
+  background-color: rgba(18, 61, 126, 0.884);
+  border : 2px solid black;
+  cursor: crosshair;
+}
+.profilecard:hover {
+  background-color: rgba(60, 107, 179, 0.884);
+}
+.pseudo {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  border : 2px solid black;
+  background-color: rgba(238, 238, 220, 0.801);
+  border-radius: 25px;
+  max-width: 50px;
+  opacity: 80%;
+}
+.drop-zone {
+  display: flex;
+  width: 100%;
+  min-height: 85px;
+  background-color: rgb(30,30,30);
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+}
+
+.drag-el {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  width: 100px;
+  background-color: rgb(148, 59, 59);
+}
