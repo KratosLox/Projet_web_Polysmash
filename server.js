@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const bodyParser = require('body-parser')
 const { randomBytes } = require('crypto')
+const cors = require('cors')
 /*
 const session = require("express-session")
 const passport = require("passport")
