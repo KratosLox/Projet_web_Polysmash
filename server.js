@@ -3,17 +3,12 @@ const app = express()
 const bodyParser = require('body-parser')
 const { randomBytes } = require('crypto')
 const cors = require('cors')
-/*
-const session = require("express-session")
-const passport = require("passport")
-const flash = require("express-flash")
-*/
 
 app.use(express.urlencoded({ extended: false }));
 
 app.use(cors())
 
-const port = 8001;
+const port = 5000;
 
 /*
 app.use(
@@ -46,11 +41,7 @@ let cookieParser = require('cookie-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-/*
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(flash())
-*/
+
 app.use(cookieParser())
 const COOKIE_SECRET = 'dashldhe128ewhgcvasdy7et2hvhwytt2'
 const SESSIONS = {}
